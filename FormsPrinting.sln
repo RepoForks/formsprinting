@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting.Android", "FormsPrinting\FormsPrinting.Android\FormsPrinting.Android.csproj", "{BD522E28-850F-4E5C-BBD7-1D1CEDAE4E68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting.Android", "FormsPrinting.Android\FormsPrinting.Android.csproj", "{BD522E28-850F-4E5C-BBD7-1D1CEDAE4E68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting", "FormsPrinting\FormsPrinting\FormsPrinting.csproj", "{24D582D1-102D-457E-A195-1CA33B63D644}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting", "FormsPrinting\FormsPrinting.csproj", "{24D582D1-102D-457E-A195-1CA33B63D644}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting.UWP", "FormsPrinting\FormsPrinting.UWP\FormsPrinting.UWP.csproj", "{4989A934-5E34-44FD-83F3-38ECCA7624F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting.UWP", "FormsPrinting.UWP\FormsPrinting.UWP.csproj", "{4989A934-5E34-44FD-83F3-38ECCA7624F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting.iOS", "FormsPrinting\FormsPrinting.iOS\FormsPrinting.iOS.csproj", "{BDCD945A-1C19-438E-80B4-55F873129D71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsPrinting.iOS", "FormsPrinting.iOS\FormsPrinting.iOS.csproj", "{BDCD945A-1C19-438E-80B4-55F873129D71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -254,5 +254,16 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 80
+		$1.TabsToSpaces = True
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.scope = text/x-csharp
+		$0.DotNetNamingPolicy = $3
+		$3.DirectoryNamespaceAssociation = PrefixedHierarchical
 	EndGlobalSection
 EndGlobal
