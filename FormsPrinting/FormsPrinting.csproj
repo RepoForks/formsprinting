@@ -42,7 +42,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ticket.cs" />
+    <Compile Include="Orden.cs" />
     <Compile Include="Templates\TicketTemplate.cs">
       <DependentUpon>TicketTemplate.cshtml</DependentUpon>
     </Compile>

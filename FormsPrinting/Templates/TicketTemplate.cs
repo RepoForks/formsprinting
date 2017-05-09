@@ -24,7 +24,7 @@ public partial class TicketTemplate : TicketTemplateBase
 #line hidden
 
 #line 1 "TicketTemplate.cshtml"
-public Ticket Model { get; set; }
+public Orden Model { get; set; }
 
 #line default
 #line hidden
@@ -36,16 +36,106 @@ WriteLiteral("<!DOCTYPE html>  \n<html");
 
 WriteLiteral(" lang=\"en\"");
 
-WriteLiteral(">  \n    <head>\n    </head>\n    <body>\n\t<h1>");
+WriteLiteral(">  \n    <head>\n\t\t<link");
+
+WriteLiteral(" rel=\"stylesheet\"");
+
+WriteLiteral(" href=\"ticket.css\"");
+
+WriteLiteral(" />\n    </head>\n    <body>\n\t\t<table");
+
+WriteLiteral(" class=\"header\"");
+
+WriteLiteral(">\n\t\t\t<tr>\n\t\t\t\t<td>\n\t\t\t\t\t<h1>Ticket: ");
 
 
-#line 8 "TicketTemplate.cshtml"
-   Write(Model.OrderId);
+#line 12 "TicketTemplate.cshtml"
+                           Write(Model.IdOrden);
 
 
 #line default
 #line hidden
-WriteLiteral("</h1>\n    </body>\n</html>  ");
+WriteLiteral("</h1>\n\t\t\t\t\t<h3>Cliente: ");
+
+
+#line 13 "TicketTemplate.cshtml"
+                            Write(Model.Cliente);
+
+
+#line default
+#line hidden
+WriteLiteral("</h3>\n\t\t\t\t</td>\n\t\t\t\t<td><img");
+
+WriteLiteral(" src=\"logo.png\"");
+
+WriteLiteral(" width=\"100px\"");
+
+WriteLiteral("></td>\n\t\t\t</tr>\n\t\t</table>\n    \t<br />\n\t\t<table>\n\t\t\t<thead>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>Pro" +
+"ducto</td>\n\t\t\t\t\t<td>Precio</td>\n\t\t\t\t</tr>\n\t\t\t</thead>\n");
+
+
+#line 26 "TicketTemplate.cshtml"
+			
+
+#line default
+#line hidden
+
+#line 26 "TicketTemplate.cshtml"
+             foreach(var prod in Model.Productos)
+			{
+
+
+#line default
+#line hidden
+WriteLiteral("\t\t\t\t<tr>\n\t\t\t\t\t<td>");
+
+
+#line 29 "TicketTemplate.cshtml"
+                   Write(prod.Nombre);
+
+
+#line default
+#line hidden
+WriteLiteral("</td>\n\t\t\t\t\t<td");
+
+WriteLiteral(" class=\"precio\"");
+
+WriteLiteral(">");
+
+
+#line 30 "TicketTemplate.cshtml"
+                                  Write(prod.Total);
+
+
+#line default
+#line hidden
+WriteLiteral("</td>\n\t\t\t\t</tr>\n");
+
+
+#line 32 "TicketTemplate.cshtml"
+			}
+
+
+#line default
+#line hidden
+WriteLiteral("\t\t\t<tfoot>\n\t\t\t\t<tr>\n\t\t\t\t\t<td");
+
+WriteLiteral(" class=\"total\"");
+
+WriteLiteral(">Total</td>\n\t\t\t\t\t<td");
+
+WriteLiteral(" class=\"precio total\"");
+
+WriteLiteral(">");
+
+
+#line 36 "TicketTemplate.cshtml"
+                                        Write(Model.Total);
+
+
+#line default
+#line hidden
+WriteLiteral("</td>\n\t\t\t\t</tr>\n\t\t\t</tfoot>\n\t\t</table>\n    </body>\n</html>  ");
 
 }
 }

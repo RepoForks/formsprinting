@@ -13,7 +13,7 @@ namespace FormsPrinting
         {
             InitializeComponent();
 
-            MainPage = new FormsPrinting.MainPage();
+            MainPage = new NavigationPage( new FormsPrinting.MainPage());
         }
 
         protected override void OnStart()
